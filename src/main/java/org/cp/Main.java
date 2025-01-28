@@ -7,7 +7,12 @@ public class Main {
 
         Dfs2DArray d = new Dfs2DArray();
 
-        int[][] grid = {{0,2,1,0},{4,0,0,3},{1,0,0,4},{0,3,2,0}};
+       // int[][] grid = {{0,2,1,0},{4,0,0,3},{1,0,0,4},{0,3,2,0}};
+
+       // int[][] grid = {{1,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,1}};
+
+        int[][] grid = {{3,10,5,8}};
+
         System.out.println(d.findMaxFish(grid));
 
 

@@ -10,7 +10,7 @@ public class Dfs2DArray {
     {
         if(i<0 || j< 0)
             return false;
-        else if(i < row - 1 && j < col - 1)
+        else if(i < row  && j < col )
             return true;
         else
             return false;
@@ -32,36 +32,42 @@ public class Dfs2DArray {
         {
             for(int j = 0 ; j < col ; j++){
                 if(grid[i][j] > 0) {
-                    int deep_res = grid[i][j];
-                    System.out.println("deep_res : "+deep_res);
+
+                    //System.out.println("visited node : "+grid[i][j]);
                     q.clear();
                     q.add(new pair(i,j));
+
+                    int deep_res = 0;
                     boolean[][] visit = new boolean[rows][col];
-
-
                     while(!q.isEmpty()) {
 
                         pair  a = q.remove();
 
                         int m = a.getI();
                         int n = a.getJ();
-                        visit[m ][n] = true;
-
+                        visit[m][n] = true;
+                         deep_res = grid[i][j];
                         for (pair p: movArray) {
+
+                            //System.out.println("row : "+(m + p.getI())+"column : "+(n + p.getJ()));
                             if (isValid(m + p.getI(), n + p.getJ(), rows, col)) {
-                                if (!visit[m + p.getI()][n + p.getJ()]) {
+                                System.out.println("row 2 : "+(m + p.getI())+" column 2: "+(n + p.getJ()));
+                                //visit[m + p.getI()][n + p.getJ()] = false;
+                                if ((!visit[m + p.getI()][n + p.getJ()]) && grid[m + p.getI()][n + p.getJ()] >0) {
                                     deep_res = deep_res + grid[m + p.getI()][n + p.getJ()];
                                     System.out.println("mid result : "+deep_res);
                                     q.add(new pair(m + p.getI(),n + p.getJ()));
+                                    System.out.println(" queue add row : "+(m + p.getI())+" column : "+(n + p.getJ()));
                                     //System.out.println("deep_res 1 : "+(m + p.getI()));
                                     //System.out.println("deep_res 2 : "+(n + p.getJ()));
                                     visit[m + p.getI()][n + p.getJ()] = true;
                                 }
                             }
+                            max = Math.max(max, deep_res);
                         }
                     }
 
-                    max = Math.max(max, deep_res);
+
                 }
             }
         }
