@@ -13,7 +13,13 @@ public class Main {
 
         int[][] grid = {{3,10,5,8}};
 
-        System.out.println(d.findMaxFish(grid));
+        //System.out.println(d.findMaxFish(grid));
+
+        String s = "MCMXCIV";
+        romanToInteger r = new romanToInteger();
+
+        System.out.println(r.romanToInt(s));
+
 
 
     }
