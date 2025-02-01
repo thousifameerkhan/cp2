@@ -22,14 +22,20 @@ public class Main {
 
 //        Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
 
-        mergeSort ms = new mergeSort();
+//        mergeSort ms = new mergeSort();
+//
+//        int[] nums1 = {1,2,3,0,0,0};
+//        int[] nums2 = {2,5,6};
+//        int m1 = 3;
+//        int n1 = 3;
+//
+//        ms.merge(nums1,3,nums2,n1);
 
-        int[] nums1 = {1,2,3,0,0,0};
-        int[] nums2 = {2,5,6};
-        int m1 = 3;
-        int n1 = 3;
+        specialArray s = new specialArray();
 
-        ms.merge(nums1,3,nums2,n1);
+        //int[] nums1 = {2,1,4};
+        int[] nums1 = {2};
+        System.out.println(s.isArraySpecial(nums1));
 
 
     }
