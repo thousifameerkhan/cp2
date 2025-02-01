@@ -34,8 +34,13 @@ public class Main {
         specialArray s = new specialArray();
 
         //int[] nums1 = {2,1,4};
-        int[] nums1 = {2};
-        System.out.println(s.isArraySpecial(nums1));
+       // int[] nums1 = {2};
+        //System.out.println(s.isArraySpecial(nums1));
+        String s1 = "16";
+        validString v = new validString();
+
+        System.out.println(v.findValidPair(s1));
+
 
 
     }
