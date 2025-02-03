@@ -36,11 +36,32 @@ public class Main {
         //int[] nums1 = {2,1,4};
        // int[] nums1 = {2};
         //System.out.println(s.isArraySpecial(nums1));
-        String s1 = "16";
-        validString v = new validString();
+//        String s1 = "16";
+//        validString v = new validString();
+//
+//        System.out.println(v.findValidPair(s1));
 
-        System.out.println(v.findValidPair(s1));
+//        String s2 ="aaaaabbc";
+//        String s3 ="abcabcab";
+//        String s4 ="tzt";
+//
+//
+//        diffMaxFreq df = new diffMaxFreq();
+//        System.out.println(df.maxDifference(s2));
+//        System.out.println(df.maxDifference(s3));
+//        System.out.println(df.maxDifference(s4));
 
+
+
+        //nums = [1,4,3,3,2]
+//        int[] nums = {1,4,3,3,2};
+//        int[] nums1 = {3,3,3,3};
+//        subarray s2 = new subarray();
+//
+//        System.out.println(s2.longestMonotonicSubarray(nums));
+//        System.out.println(s2.longestMonotonicSubarray(nums1));
+        numberFormat n = new numberFormat();
+        n.test();
 
 
     }
