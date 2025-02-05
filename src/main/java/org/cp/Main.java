@@ -60,9 +60,18 @@ public class Main {
 //
 //        System.out.println(s2.longestMonotonicSubarray(nums));
 //        System.out.println(s2.longestMonotonicSubarray(nums1));
-        numberFormat n = new numberFormat();
-        n.test();
+//        numberFormat n = new numberFormat();
+//        n.test();
 
+        int k;
+        k = 'a'^'b';
+
+        String s1 = "aa";
+        String s2 = "bb";
+        almostEqual e = new almostEqual();
+
+        System.out.println(e.areAlmostEqual(s1,s2));
+        //System.out.println("k : "+k);
 
     }
 
