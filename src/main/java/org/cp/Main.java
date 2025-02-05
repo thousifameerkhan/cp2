@@ -1,5 +1,7 @@
 package org.cp;
 
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -63,15 +65,32 @@ public class Main {
 //        numberFormat n = new numberFormat();
 //        n.test();
 
-        int k;
-        k = 'a'^'b';
+//        int k;
+//        k = 'a'^'b';
+//
+//        String s1 = "aa";
+//        String s2 = "bb";
+//        almostEqual e = new almostEqual();
+//
+//        System.out.println(e.areAlmostEqual(s1,s2));
+//        //System.out.println("k : "+k);
 
-        String s1 = "aa";
-        String s2 = "bb";
-        almostEqual e = new almostEqual();
+//         int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//         int target = 15;
 
-        System.out.println(e.areAlmostEqual(s1,s2));
-        //System.out.println("k : "+k);
+//        int arr[] = {1, 2, 3, 7, 5};
+//        int target = 12;
+
+
+          int arr[] = {38,22,20,12,47,23,18,13,18,47,36,42};
+         int target = 174;
+         maxSumSubArray m = new maxSumSubArray();
+         ArrayList<Integer> k =  m.subarraySum(arr,target);
+
+        System.out.println("\nMethod 2: Using an enhanced for loop");
+        for (int element : k) {
+            System.out.print(element + " ");
+        }
 
     }
 
