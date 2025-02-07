@@ -82,15 +82,20 @@ public class Main {
 //        int target = 12;
 
 
-          int arr[] = {38,22,20,12,47,23,18,13,18,47,36,42};
-         int target = 174;
-         maxSumSubArray m = new maxSumSubArray();
-         ArrayList<Integer> k =  m.subarraySum(arr,target);
+          int arr[] = {2,3,4,6,8,12};
+          //int arr[] = {1,2,4,5,10};
+          tupleSame ts = new tupleSame();
+          //ts.tupleSameProduct(arr);
+          System.out.println(ts.tupleSameProduct(arr));
 
-        System.out.println("\nMethod 2: Using an enhanced for loop");
-        for (int element : k) {
-            System.out.print(element + " ");
-        }
+//         int target = 174;
+//         maxSumSubArray m = new maxSumSubArray();
+//         ArrayList<Integer> k =  m.subarraySum(arr,target);
+//
+//        System.out.println("\nMethod 2: Using an enhanced for loop");
+//        for (int element : k) {
+//            System.out.print(element + " ");
+//        }
 
     }
 
