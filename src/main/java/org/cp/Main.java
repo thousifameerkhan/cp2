@@ -82,11 +82,11 @@ public class Main {
 //        int target = 12;
 
 
-          int arr[] = {2,3,4,6,8,12};
-          //int arr[] = {1,2,4,5,10};
-          tupleSame ts = new tupleSame();
-          //ts.tupleSameProduct(arr);
-          System.out.println(ts.tupleSameProduct(arr));
+//          int arr[] = {2,3,4,6,8,12};
+//          //int arr[] = {1,2,4,5,10};
+//          tupleSame ts = new tupleSame();
+//          //ts.tupleSameProduct(arr);
+//          System.out.println(ts.tupleSameProduct(arr));
 
 //         int target = 174;
 //         maxSumSubArray m = new maxSumSubArray();
@@ -97,6 +97,18 @@ public class Main {
 //            System.out.print(element + " ");
 //        }
 
+        //int limit =4;
+        //int[][] queries = {{0,1},{1,2},{2,2},{3,4},{4,5}};
+        int limit =4;
+        int[][] queries = {{1,4},{2,5},{1,3},{3,4}};
+        distinctColors d1 = new distinctColors();
+        int[] a = d1.queryResults(limit,queries);
+
+
+        for(int p:a)
+        {
+            System.out.println(p);
+        }
     }
 
 
