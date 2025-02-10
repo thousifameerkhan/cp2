@@ -99,18 +99,31 @@ public class Main {
 
         //int limit =4;
         //int[][] queries = {{0,1},{1,2},{2,2},{3,4},{4,5}};
-        int limit =4;
-        int[][] queries = {{1,4},{2,5},{1,3},{3,4}};
-        distinctColors d1 = new distinctColors();
-        int[] a = d1.queryResults(limit,queries);
+//        int limit =4;
+//        int[][] queries = {{1,4},{2,5},{1,3},{3,4}};
+//        distinctColors d1 = new distinctColors();
+//        int[] a = d1.queryResults(limit,queries);
+//
+//
+//        for(int p:a)
+//        {
+//            System.out.println(p);
+//        }
+//
+//        int[][] queries = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//        Array2DSorting a1 = new Array2DSorting();
+//        a1.printMatrix(queries);
+
+        clearDigits_problem c1 =  new clearDigits_problem();
+        //String inp = "121b34degh12";
+        String inp = "cb34";
+        c1.clearDigits(inp);
+
+        char a = '0';
+        char b = 'a';
+        System.out.println(c1.clearDigits(inp));
+
+    }}
 
 
-        for(int p:a)
-        {
-            System.out.println(p);
-        }
-    }
 
-
-
-}
