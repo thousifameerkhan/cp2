@@ -114,14 +114,33 @@ public class Main {
 //        Array2DSorting a1 = new Array2DSorting();
 //        a1.printMatrix(queries);
 
-        clearDigits_problem c1 =  new clearDigits_problem();
-        //String inp = "121b34degh12";
-        String inp = "cb34";
-        c1.clearDigits(inp);
+//        clearDigits_problem c1 =  new clearDigits_problem();
+//        //String inp = "121b34degh12";
+//        String inp = "cb34";
+//        c1.clearDigits(inp);
+//
+//        char a = '0';
+//        char b = 'a';
+//        System.out.println(c1.clearDigits(inp));
 
-        char a = '0';
-        char b = 'a';
-        System.out.println(c1.clearDigits(inp));
+        //String inp = "abcabcbb";
+        //String inp = "bbbbb";
+//        //String inp = "pwwkew";
+//        String inp = "";
+//
+//        longestSubstringWORepeating ls = new longestSubstringWORepeating();
+//        System.out.println(ls.lengthOfLongestSubstring(inp));
+
+        //String s1 = "daabcbaabcbc";
+        //String part = "abc";
+
+        String s1 = "axxxxyyyyb";
+        String part = "xy";
+
+        removeOccurrencesClass rO = new removeOccurrencesClass();
+
+        System.out.println(rO.removeOccurrences(s1,part));
+
 
     }}
 
