@@ -134,13 +134,19 @@ public class Main {
         //String s1 = "daabcbaabcbc";
         //String part = "abc";
 
-        String s1 = "axxxxyyyyb";
-        String part = "xy";
+//        String s1 = "axxxxyyyyb";
+//        String part = "xy";
+//
+//        removeOccurrencesClass rO = new removeOccurrencesClass();
+//
+//        System.out.println(rO.removeOccurrences(s1,part));
 
-        removeOccurrencesClass rO = new removeOccurrencesClass();
-
-        System.out.println(rO.removeOccurrences(s1,part));
-
+          maximumSumClass ms = new maximumSumClass();
+          //System.out.println(ms.sumOfDigits(99999));
+          //int[] nums1 = {18,43,36,13,7};
+          int[] nums1 = {229,398,269,317,420,464,491,218,439,153,482,169,411,93,147,50,347,210,251,366,401};
+          //ms.maximumSum(nums1);
+        System.out.println(ms.maximumSum(nums1));
 
     }}
 
